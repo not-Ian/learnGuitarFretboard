@@ -12,6 +12,9 @@ beatsPerNote = 11 # 6 if you only go up the strings once, 11 if you go up then d
 bpm = 80
 secondsPerBeat = 60 / bpm
 
+# notes = ["A", "B", "C", "D", "E", "F", "G"]
+# notes = ["Ab", "Bb", "Db", "Eb", "Gb"]
+# notes = ["A#", "C#", "D#", "F#", "G#"]
 notes = ["A", "B", "C", "D", "E", "F", "G", "Ab", "Bb", "Db", "Eb", "Gb", "A#", "C#", "D#", "F#", "G#"]
 shuffle(notes)
 
