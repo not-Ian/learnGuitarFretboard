@@ -8,21 +8,6 @@ from enum import Enum
 if platform.system() == "Windows":
     import winsound
 
-metronomeFrequency = 2000  # 2000 Hertz
-metronomeDuration = 100  # 100 ms == 0.1 second
-
-bpm = 40
-secondsPerBeat = 60 / bpm
-reps = 8 # number of times to drill
-
-strings = ["E", "A", "D", "G", "B", "e"]
-
-pattern = Pattern.random
-# notes = ["A", "B", "C", "D", "E", "F", "G"] # natural notes
-# notes = ["Ab", "Bb", "Db", "Eb", "Gb"] # flats
-# notes = ["A#", "C#", "D#", "F#", "G#"] # sharps
-notes = ["A", "B", "C", "D", "E", "F", "G", "Ab", "Bb", "Db", "Eb", "Gb", "A#", "C#", "D#", "F#", "G#"]
-
 class Pattern(Enum):
 
     upDown = "1"
@@ -53,6 +38,21 @@ def printStrings(note, currentString):
                 print(string + "|-" + note + "--|")
         else:
             print(string + "|----|")
+
+metronomeFrequency = 2000  # 2000 Hertz
+metronomeDuration = 100  # 100 ms == 0.1 second
+
+bpm = 40
+secondsPerBeat = 60 / bpm
+reps = 8 # number of times to drill
+
+strings = ["E", "A", "D", "G", "B", "e"]
+
+pattern = Pattern.random
+# notes = ["A", "B", "C", "D", "E", "F", "G"] # natural notes
+# notes = ["Ab", "Bb", "Db", "Eb", "Gb"] # flats
+# notes = ["A#", "C#", "D#", "F#", "G#"] # sharps
+notes = ["A", "B", "C", "D", "E", "F", "G", "Ab", "Bb", "Db", "Eb", "Gb", "A#", "C#", "D#", "F#", "G#"]
 
 # short pause to get read
 sleep(2) # seconds
